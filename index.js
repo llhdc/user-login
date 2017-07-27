@@ -32,6 +32,9 @@ app.use(session ({
   // cookie: { secure: true }
 }));
 
+// Require userRoutes.Js
+app.use(require("./userRoutes"));
+
 // Listen for connection to port
 app.listen(3000, () => {
   console.log('Node running successfully at http://localhost:3000');
