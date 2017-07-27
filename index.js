@@ -31,3 +31,8 @@ app.use(session ({
   saveUninitialized: false,
   // cookie: { secure: true }
 }));
+
+// Listen for connection to port
+app.listen(3000, () => {
+  console.log('Node running successfully at http://localhost:3000');
+})
