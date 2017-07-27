@@ -19,7 +19,7 @@ app.set('views', __dirname + '/views');
 app.use(bodyParser.urlencoded({extended: false}));
 
 // Setup cookie parser
-app.use(cookieParser())
+app.use(cookieParser());
 
 // Setup Express Validator
 app.use(expressValidator());
@@ -30,4 +30,4 @@ app.use(session ({
   resave: false,
   saveUnitialized: false,
   // cookie: { secure: true }
-}))
+}));
