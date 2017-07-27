@@ -28,6 +28,6 @@ app.use(expressValidator());
 app.use(session ({
   secret: '12344343-dfskdbfskdjflsdjfskjdbfljs11-sdljkfn',
   resave: false,
-  saveUnitialized: false,
+  saveUninitialized: false,
   // cookie: { secure: true }
 }));
