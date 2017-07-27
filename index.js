@@ -23,3 +23,11 @@ app.use(cookieParser())
 
 // Setup Express Validator
 app.use(expressValidator());
+
+// Add session handler middleware
+app.use(session ({
+  secret: '12344343-dfskdbfskdjflsdjfskjdbfljs11-sdljkfn',
+  resave: false,
+  saveUnitialized: false,
+  // cookie: { secure: true }
+}))
