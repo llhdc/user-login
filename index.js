@@ -24,6 +24,9 @@ app.use(cookieParser());
 // Setup Express Validator
 app.use(expressValidator());
 
+// Require userRoutes.Js
+app.use(require('./userRoutes'));
+
 // Add session handler middleware
 app.use(session ({
   secret: '12344343-dfskdbfskdjflsdjfskjdbfljs11-sdljkfn',
@@ -31,9 +34,6 @@ app.use(session ({
   saveUninitialized: false,
   // cookie: { secure: true }
 }));
-
-// Require userRoutes.Js
-app.use(require('./userRoutes'));
 
 // Listen for connection to port
 app.listen(3000, () => {
