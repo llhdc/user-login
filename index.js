@@ -35,6 +35,13 @@ app.use(session ({
   // cookie: { secure: true }
 }));
 
+let user = {
+  name: 'Leonard',
+  email: 'l.horne@gmail.com',
+  password: 'asdf'
+};
+
+
 // Listen for connection to port
 app.listen(3000, () => {
   console.log('Node running successfully at http://localhost:3000');
